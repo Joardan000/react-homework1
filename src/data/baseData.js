@@ -2,7 +2,7 @@ export const products = [
     {
         id: 1,
         name: "Smartfon Xiaomi Redmi Note 13, 6/128 GB, 8/128 GB, 8/256 GB",
-        img: "/img1.png",
+        img: "src/assets/img1.png",
         rating: 5.0,
         reviews: 1,
         installment: "297 480 so'm/oyiga",
@@ -14,7 +14,7 @@ export const products = [
     {
         id: 2,
         name: "Zarbga chidamli smartfon Honor X9b 5G, 8/12/256 GB, 6,78 OLED",
-        img: "/img2.png",
+        img: "src/assets/img2.png",
         rating: 5.0,
         reviews: 1,
         installment: "478 800 so'm/oyiga",
@@ -26,7 +26,7 @@ export const products = [
     {
         id: 3,
         name: "The Act ko'z atrofi, qora doiralar qarshi ko'z kremi, ko'k choy",
-        img: "/img3.png",
+        img: "src/assets/img3.png",
         rating: 5.0,
         reviews: 8,
         installment: "13 080 so'm/oyiga",
@@ -38,7 +38,7 @@ export const products = [
     {
         id: 4,
         name: "Yuz kremi vitamin C bilan, The Act, namlantiradi va terini oziqlantiradi",
-        img: "/img4.png",
+        img: "src/assets/img4.png",
         rating: 5.0,
         reviews: 8,
         installment: "13 080 so'm/oyiga",
@@ -50,7 +50,7 @@ export const products = [
     {
         id: 5,
         name: "Bogema etajerka, chaq chuq solish uchun, 2 donasini narxi",
-        img: "/img5.png",
+        img: "src/assets/img5.png",
         rating: 5.0,
         reviews: 1,
         installment: "35 880 so'm/oyiga",
@@ -62,7 +62,7 @@ export const products = [
     {
         id: 6,
         name: "Chizma dastgohi, ikki tomonlama, markerli, rangli qalamlar, magnitli",
-        img: "/img6.png",
+        img: "src/assets/img6.png",
         rating: 5.0,
         reviews: 2,
         installment: "35 880 so'm/oyiga",
@@ -74,7 +74,7 @@ export const products = [
     {
         id: 7,
         name: "Smartfon Xiaomi Redmi Note 13 Pro+ 5G, curved display, AMOLED 120Hz",
-        img: "/img7.png",
+        img: "src/assets/img7.png",
         rating: 5.0,
         reviews: 2,
         installment: "645 480 so'm/oyiga",
@@ -86,7 +86,7 @@ export const products = [
     {
         id: 8,
         name: "Noutbuk HP AMD Ryzen 7-5825U, DDR4 16GB SSD 512GB, 15.6\" FHD",
-        img: "/img8.png",
+        img: "src/assets/img8.png",
         rating: 5.0,
         reviews: 3,
         installment: "864 000 so'm/oyiga",
@@ -98,7 +98,7 @@ export const products = [
     {
         id: 9,
         name: "Chopper maydalagich 5 tasi 1 da, 3.5 litrli, elektr va qo'lda ishlaydigan",
-        img: "/img9.png",
+        img: "src/assets/img9.png",
         rating: 5.0,
         reviews: 1,
         installment: "35 880 so'm/oyiga",
@@ -110,7 +110,7 @@ export const products = [
     {
         id: 10,
         name: "Erkaklar va ayollar krossovkalari, dizaynerlik, sport, yurish",
-        img: "/img10.png",
+        img: "src/assets/img10.png",
         rating: 5.0,
         reviews: 1,
         installment: "46 800 so'm/oyiga",
@@ -122,7 +122,7 @@ export const products = [
     {
         id: 11,
         name: "Televizor Samsung Crystal UHD 4K 43\", 50\", 55\", 65\" CU7100 Smart TV",
-        img: "/img11.png",
+        img: "src/assets/img11.png",
         rating: 5.0,
         reviews: 5,
         installment: "587 880 so'm/oyiga",
@@ -134,7 +134,7 @@ export const products = [
     {
         id: 12,
         name: "Avtomobil va uy uchun portativ, simsiz, kuchli JB-107 changyutgic...",
-        img: "/img12.png",
+        img: "src/assets/img12.png",
         rating: 4.7,
         reviews: 32,
         installment: "23 880 so'm/oyiga",
