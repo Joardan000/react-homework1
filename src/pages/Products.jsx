@@ -1,5 +1,12 @@
-import {products} from "../data/baseData.js";
-import {useState} from "react";
+import { products } from "../data/baseData.js";
+import { useState } from "react";
+
+// Statik rasmlarni import qilish
+import favIcon from "../assets/fav.svg";
+import promotionIcon from "../assets/promotion.svg";
+import starIcon from "../assets/star.svg";
+import buyIcon from "../assets/buy.svg";
+import arrowIcon from "../assets/arrow.svg";
 
 function Products() {
     const [isTrue, setIsTrue] = useState(false);
@@ -11,21 +18,27 @@ function Products() {
     }
 
     const product = isTrue ? products : products.slice(0, 12);
+
     const mapData = product.map((a) => (
         <div
             className="cursor-pointer hover:shadow-lg max-w-[264px] p-4 hover:max-w-[350px] flex justify-center mx-auto w-full transition-all duration-300 ease-in-out bg-white rounded-lg"
             key={a.id}>
             <div>
                 <div className="relative h-[309.33px] object-cover">
+                    {/* Mahsulot rasmi mockData dan kelyapti */}
                     <img className="rounded-lg max-w-full w-full h-[309.32px] mx-auto object-cover" src={a.img} alt={'img' + a.id}/>
-                    <img className="absolute top-[10px] right-[9px]" src="src/assets/fav.svg" alt={'favicon' + a.id}/>
-                    {a.discount && <img className="absolute left-0 bottom-0" src="src/assets/promotion.svg" alt={'promotion' + a.id}/>}
+
+                    {/* Sevimlilar belgisi */}
+                    <img className="absolute top-[10px] right-[9px]" src={favIcon} alt={'favicon' + a.id}/>
+
+                    {/* Aksiya belgisi */}
+                    {a.discount && <img className="absolute left-0 bottom-0" src={promotionIcon} alt={'promotion' + a.id}/>}
                 </div>
                 <div className="max-w-full px-2 pt-3 pb-2">
                     <p className="text-[12.8px] leading-[15.36px] text-[#1F2026] font-normal mb-1">{a.name}</p>
                     <div className="flex gap-1 items-center mb-2">
                         <div className="flex items-center gap-[3.15px]">
-                            <img src="src/assets/star.svg" alt={'star-icon-' + a.id}/>
+                            <img src={starIcon} alt={'star-icon-' + a.id}/>
                             <p className="font-light text-[11.2px] text-[#8B8E99]">{a.rating}</p>
                         </div>
                         <p className="font-light text-[11.2px] leading-[11.2px] text-[#8B8E99]">({a.reviews} sharx)</p>
@@ -37,24 +50,27 @@ function Products() {
                             <p className="text-[11.2px] leading-[13.44px] text-[#8B8E99] line-through mb-[2px]">{a.oldPrice}</p>
                             <p className="mb-[2.4px] text-[#1F2026] text-[14px] leading-[16.8px]">{a.newPrice}</p>
                         </div>
-                        <img src="src/assets/buy.svg" alt={'buy-icon-' + a.id}/>
+                        <img src={buyIcon} alt={'buy-icon-' + a.id}/>
                     </div>
                 </div>
             </div>
         </div>
     ));
+
     return (
         <>
             <div className="max-w-[1240px] mx-auto w-full m-10">
                 <div className="font-bold mb-5 text-[28px] leaidng-[36px] flex items-center text-[#1F2026]">
                     <p>Aksiya</p>
-                    <img src="src/assets/arrow.svg" alt="arrow-icon"/>
+                    <img src={arrowIcon} alt="arrow-icon"/>
                 </div>
                 <div className="flex justify-center flex-wrap gap-x-5 gap-y-8 mb-10">{mapData}</div>
-                <button onClick={toggleAll} className="max-w-[740px] w-full rounded-lg py-5 flex mx-auto bg-[#F2F4F7] justify-center font-semibold text-base leading-[100%] text-[#1F2026]">{seeAll}</button>
+                <button onClick={toggleAll} className="max-w-[740px] w-full rounded-lg py-5 flex mx-auto bg-[#F2F4F7] justify-center font-semibold text-base leading-[100%] text-[#1F2026]">
+                    {seeAll}
+                </button>
             </div>
         </>
-    )
+    );
 }
 
-export default Products
+export default Products;
